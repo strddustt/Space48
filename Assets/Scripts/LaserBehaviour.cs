@@ -5,15 +5,16 @@ using UnityEngine;
 public class LaserBehaviour : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 500;
+    Movement movement;
     // Start is called before the first frame update
     void Start()
     {
-        
+       movement = GetComponent<Movement>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + transform.forward * moveSpeed * Time.deltaTime;
+        movement.Move(moveSpeed, 1);
     }
 }
