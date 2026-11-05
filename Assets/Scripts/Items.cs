@@ -13,12 +13,12 @@ public class Items : MonoBehaviour
     private int activeItemIndex = -1;
 
 
-    ShipMovement shipmovement;
+    Movement shipmovement;
     // Start is called before the first frame update
     void Start()
     {
-        shipmovement = GetComponent<ShipMovement>();
-        ui = FindObjectOfType<UIText>();
+        shipmovement = GetComponent<Movement>();
+        ui = FindFirstObjectByType<UIText>();
         shoot = GetComponent<shoot>();
     }
 

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7733922278357918054}
   - component: {fileID: 6465202573183549176}
   - component: {fileID: 2587508263909915573}
-  - component: {fileID: 2178352074919452246}
   - component: {fileID: 6404628162725205325}
   m_Layer: 0
   m_Name: laser
@@ -65,19 +64,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2178352074919452246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6296192066327028313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ceb043ac3478c54eb1c5eadd245bcb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 200
 --- !u!114 &6404628162725205325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +76,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a34ffae2aa01670408e633bd8b20a1ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 500
+  rotationSpeed: 0
+  requiresInput: 0
 --- !u!1001 &5579976546682625868
 PrefabInstance:
   m_ObjectHideFlags: 0
